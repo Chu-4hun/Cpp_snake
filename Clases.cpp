@@ -2,19 +2,38 @@
 #include <array>
 #include "Chu_Toolbox.h"
 
-bool Field[20][20];
+
+bool gameField[20][20];
 
 
-class Game{
-    Game(){
-        LOG("Game started");
-    }
-    ~Game(){
-        LOG("Game ended");
+
+class OutputWindow {
+private:
+    int p_gameField_x, p_gameField_y;
+public:
+    OutputWindow(int x, int y):p_gameField_x(x),p_gameField_y(y){};
+    void PritnField(){
+        for (int i = 0; i<p_gameField_y; i++){
+            LOG(gameField[i][0]);
+            for (int j = 0; j < p_gameField_x; ++j) {
+                LOG(gameField[i][j]);
+            }
+        };
+
     }
 };
-class Input{
+class SnakeGame {
+public:
 
+    void Start(){
+        OutputWindow outputWindow(20,20);
+        outputWindow.PritnField();
+    }
+
+
+    ~SnakeGame() {
+        LOG("SnakeGame ended");
+    }
 };
 
 
