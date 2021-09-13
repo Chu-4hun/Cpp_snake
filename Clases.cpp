@@ -1,6 +1,8 @@
 #include <iostream>
 #include <array>
+
 #include "Chu_Toolbox.h"
+#include "Clases.h"
 
 
 bool gameField[20][20];
@@ -22,18 +24,9 @@ public:
 
     }
 };
-class SnakeGame {
-public:
-
-    void Start(){
+void SnakeGame::Start() {
         OutputWindow outputWindow(20,20);
         outputWindow.PritnField();
     }
-
-
-    ~SnakeGame() {
-        LOG("SnakeGame ended");
-    }
-};
 
 

@@ -36,6 +36,9 @@
 
 #Cmake
 **/cmake-build-debug
+**/cmake-build-debug-mingw
+**/cmake-build-debug-visualstudio
+**/cmake-build-release
 **/CMakeCache.txt
 **/cmake_install.cmake
 **/install_manifest.txt
