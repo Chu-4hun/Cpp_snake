@@ -11,5 +11,5 @@ int main() {
     SnakeGame newGame;
     newGame.Start();
 
-    return 0;
+//    return 0;
 }

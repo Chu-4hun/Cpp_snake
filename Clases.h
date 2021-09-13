@@ -8,7 +8,5 @@ class SnakeGame {
 public:
     void Start();
 
-    ~SnakeGame() {
-        LOG("SnakeGame ended");
-    }
+    ~SnakeGame(){LOG("SnakeGame ended");}
 };
